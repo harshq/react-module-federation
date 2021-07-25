@@ -1,11 +1,15 @@
+import React from 'react';
 import logo from "./logo.svg";
 import "./App.css";
-import Mfe from "mfe1/app";
+
+const MFE = React.lazy(() => import("mfe1/app"));
 
 function App() {
   return (
     <div className="App">
-      <Mfe />
+      <React.Suspense fallback="Loading MFE">
+        <MFE />
+      </React.Suspense>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
