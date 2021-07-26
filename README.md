@@ -1,5 +1,7 @@
 ## Micro frontends with Webpack 5 Module Federation and React
 
+### Run locally
+
 ```lerna bootstrap && yarn start```
 
 ### Live demo
